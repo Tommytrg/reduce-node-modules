@@ -1,0 +1,29 @@
+{
+  "name": "reduce-node-modules",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "fmt": "prettier --check '{src,test}/**/*.{t,j}s'",
+    "fmt!": "prettier --write '{src,test}/**/*.{t,j}s'",
+    "test": "jest --colors",
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "Tomás Ruiz <tomastrg22@gmail.com> (https://github.com/tommytrg)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.20",
+    "@types/node": "^13.7.1",
+    "jest": "^24.9.0",
+    "prettier": "1.18.2",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^8.0.1",
+    "fs-extra": "^8.1.0",
+    "ts-node": "^8.6.2"
+  }
+}
